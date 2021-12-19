@@ -21,6 +21,11 @@ digraph OgnenataPustinya {
         215, 219, 254, 256, 263, 292, 297, 305
         339, 373, 384, 386, 395, 399, 412
     }
+    subgraph awards {
+        node [color=mediumspringgreen, style=filled]
+        14, 39, 117, 124, 145, 154, 164, 200, 209
+        250, 334, 387
+    }
 
     subgraph cluster_bivak {
         color = blue
