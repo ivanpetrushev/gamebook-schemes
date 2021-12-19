@@ -1,0 +1,80 @@
+digraph BarabanNaSmartta {
+    subgraph deaths {
+        node [color=red, style=filled] 
+        21, 34, 38
+    }
+    
+    subgraph cluster_nakazania {
+        color = blue
+        bgcolor = aliceblue
+        label = "Наказанията"
+        5, 4, 7, 8, 6, 9, 11, 10, 12, 13
+    }
+    
+    subgraph cluster_bitka {
+        color = blue
+        bgcolor = paleturquoise
+        label = "Битка"
+        31, 32, 34, 29
+    }
+    
+    subgraph cluster_razvrazka {
+        color = blue
+        bgcolor = cornsilk
+        label = "Развръзка"
+        39, 40, 44, 42
+    }
+    
+    subgraph cluster_trium {
+        color = blue
+        bgcolor = mistyrose
+        label = "В трюма"
+        20, 22, 24
+    }
+    
+    1 -> 2
+    1 [color=darkgoldenrod1, style=filled]
+    2 -> 3
+    3 -> 5, 7
+    4 -> 6, 8
+    5 -> 4
+    6 -> 10, 12
+    7 -> 9, 11
+    8 -> 9, 11
+    9 -> 13, 14
+    10 -> 14
+    11 -> 15
+    12 -> 14
+    13 -> 14
+    14 -> 16, 18
+    15 -> 16, 18
+    16 -> 17
+    17 -> 19, 20
+    18 -> 16, 21
+    19 -> 23
+    20 -> 22, 24
+    21
+    22 -> 25, 27
+    23 -> 25, 27
+    24 -> 23
+    25 -> 26
+    26 -> 31, 32
+    27 -> 28
+    28 -> 31, 32
+    29 -> 30
+    30 -> 33, 35
+    31 -> 29
+    32 -> 29, 34
+    33 -> 36
+    34
+    35 -> 37
+    36 -> 39, 41
+    37 -> 39, 41
+    38
+    39 -> 40
+    40 -> 44
+    41 -> 38
+    42 -> 43
+    43 [shape=star, color=darkgoldenrod1, style=filled]
+    44 -> 38, 42
+}
