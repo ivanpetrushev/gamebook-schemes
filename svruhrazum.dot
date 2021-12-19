@@ -95,7 +95,7 @@ digraph Svruhrazum {
         49, 164, 82, 242, 248, 43, 162, 221, 49, 86
     }
     
-    1 -> {67, 91, 40}
+    1 -> 67, 91, 40
     1 [width=3, height=3, fontsize=100, color=darkgoldenrod1, style=filled]
     2 -> 42, 7
     3
