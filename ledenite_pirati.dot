@@ -1,5 +1,5 @@
 digraph LedenitePirati {
-    fontsize = 50
+    fontsize = 100
     subgraph deaths {
         node [color=red, style=filled] 
         3, 15, 27, 77, 89, 90, 134, 135
@@ -37,7 +37,7 @@ digraph LedenitePirati {
     subgraph cluster_gresnha_vrata {
         color = blue
         bgcolor = mistyrose
-        label = "Грешна врата"
+        label = "Грешна\n врата"
         224, 348, 211, 24, 67, 348, 120, 81
         111, 214, 138, 175, 156, 165, 184, 228,
         302, 221, 234, 94, 251, 333, 196
@@ -46,7 +46,7 @@ digraph LedenitePirati {
     subgraph cluster_promukvane_v_dvoreca {
         color = blue
         bgcolor = moccasin
-        label = "Промъкване в двореца"
+        label = "Промъкване\n в двореца"
         102, 390, 359, 204, 128, 21, 73, 40
         148, 267, 285, 89, 118, 240, 145, 296
         374, 130, 10, 172, 27, 154, 46, 163
@@ -57,7 +57,7 @@ digraph LedenitePirati {
     subgraph cluster_izpitanie_luk {
         color = blue
         bgcolor = coral
-        label = "Изпитание с лък"
+        label = "Изпитание\n с лък"
         53, 9, 78, 93, 97, 116, 20, 32, 65, 140, 61
         216, 250, 277, 291, 186, 202, 226, 238, 266, 331
         344, 190, 370, 383, 167
@@ -66,7 +66,7 @@ digraph LedenitePirati {
     subgraph cluster_izpitanie_saobrazitelnost {
         color = blue
         bgcolor = paleturquoise
-        label = "Изпитание съобразителност"
+        label = "Изпитание\n съобразителност"
         113, 6, 71, 100, 29, 52, 205, 257, 171, 144, 126
         147, 213, 158, 177, 260, 17, 219, 261, 309
     }
@@ -74,7 +74,7 @@ digraph LedenitePirati {
     subgraph cluster_izpitanie_nabliudatelnost {
         color = blue
         bgcolor = burlywood1
-        label = "Изпитание наблюдателност"
+        label = "Изпитание\n наблюдателност"
         284, 69, 39, 48, 25, 83, 96, 114, 122, 150, 134, 88
     }
 
@@ -124,7 +124,7 @@ digraph LedenitePirati {
     subgraph cluster_sluga_kinjal {
         color = blue
         bgcolor = lemonchiffon
-        label = "Слуга с книжал"
+        label = "Слуга с\n книжал"
         41, 66, 239, 121, 315, 255, 298, 292, 268, 392
         410, 360, 325, 304, 340, 36, 415, 373, 248, 396
         320, 382, 249, 95, 215, 231, 297, 310, 334, 174
@@ -135,7 +135,7 @@ digraph LedenitePirati {
     subgraph cluster_chukane {
         color = blue
         bgcolor = azure
-        label = "Чукане по вратата"
+        label = "Чукане\n по вратата"
         362, 376, 394, 405, 33, 129
     }
 
@@ -150,7 +150,7 @@ digraph LedenitePirati {
     subgraph cluster_spalnya {
         color = blue
         bgcolor = mintcream
-        label = "Спалнята на принцесата"
+        label = "Спалнята на\nпринцесата"
         440, 187, 378, 212, 409, 432, 418, 367, 281, 446
         450, 423, 391, 332, 317, 286, 428, 62, 349, 197
     }
@@ -158,7 +158,7 @@ digraph LedenitePirati {
     subgraph cluster_sled_frigatata {
         color = blue
         bgcolor = floralwhite
-        label = "След фригатата"
+        label = "След\n фригатата"
         31, 421, 384, 44, 399, 371, 443, 90, 414
         435, 159, 431
     }
@@ -166,7 +166,7 @@ digraph LedenitePirati {
     subgraph cluster_sheina {
         color = blue
         bgcolor = gainsboro
-        label = "Платноходна шейна"
+        label = "Платноходна\n шейна"
         426, 395, 439, 388, 258, 455, 419, 459, 445
         301, 146, 454, 466, 468, 472
     }
