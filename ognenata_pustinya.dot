@@ -1,4 +1,5 @@
 digraph OgnenataPustinya {
+    fontsize = 50
     subgraph deaths {
         node [color=red, style=filled] 
         5, 13, 24, 29, 33, 35, 42, 43, 44, 76
@@ -7,7 +8,7 @@ digraph OgnenataPustinya {
         419
     }
     subgraph battles {
-        node [shape=doubleoctagon]
+        node [shape=doubleoctagon, color=orange, style=filled]
         8, 12, 17, 20, 52, 56, 57, 61, 65, 83
         90, 92, 94, 100, 101, 103, 142, 149, 160
         175, 183, 185, 193, 197, 207, 214, 228
@@ -15,14 +16,14 @@ digraph OgnenataPustinya {
         323, 382, 400
     }
     subgraph chance {
-        node [shape=box]
+        node [shape=box, color=aquamarine, style=filled]
         26, 36, 37, 46, 47, 48, 115, 119, 131,
         134, 138, 161, 177, 198, 199, 201, 211
         215, 219, 254, 256, 263, 292, 297, 305
         339, 373, 384, 386, 395, 399, 412
     }
     subgraph awards {
-        node [color=mediumspringgreen, style=filled]
+        node [color=chartreuse, style=filled]
         14, 39, 117, 124, 145, 154, 164, 200, 209
         250, 334, 387
     }
