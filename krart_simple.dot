@@ -1,0 +1,65 @@
+digraph BoiniteRovoveNaKrartSimple {
+    fontsize=50
+    node [style=filled]
+    begin [label = "Начало", shape=star, color=darkgoldenrod1, style=filled]
+    spirala [label = "Игра на спирала", fillcolor=seashell]
+    balhazar [label = "Балхазар", fillcolor=aliceblue]
+    kaliudzhan [label = "Калюджън", fillcolor=mistyrose]
+    vil [label = "Вил", fillcolor=moccasin]
+    sergii [label = "Сергии", fillcolor=coral]
+    elfska_gradina [label = "Елфска\n градина", fillcolor=paleturquoise]
+    ogledalen_koridor [label = "Огледален\n коридор", fillcolor=burlywood1]
+    nebularon [label = "Небуларон", fillcolor=floralwhite]
+    ezero_imragarn [label = "Езерото на\n Имрагарн", fillcolor=cornsilk]
+    reindzhar [label = "Реинджър", fillcolor=antiquewhite]
+    ezero_sarkofazi [label = "Езеро със\n саркофази", fillcolor=lemonchiffon]
+    lodkar [label = "Лодкар", fillcolor=lemonchiffon]
+    shamandura [label = "Шамандура", fillcolor=lemonchiffon]
+    varvari_mech [label = "Варвари\n и меч", fillcolor=azure]
+    varvari [label = "Варвари", fillcolor=floralwhite]
+    shahmatna_daska [label = "Шахматна\n дъска", fillcolor=darkolivegreen1]
+    prikovani_chudovishta [label = "Приковани\n чудовища", fillcolor=mintcream]
+    vkameneni_prikluchenci [label = "Вкаменени\n приключенци", fillcolor=darkslategray3]
+    leshoyadi [label = "Лешояди", fillcolor=gainsboro]
+    dva_mosta [label = "Два\n моста", fillcolor=darkslategray1]
+    veshtici [label = "Вещици", fillcolor=lightcyan]
+    hram_ehidna [label = "Храм на\n Ехидна", fillcolor=papayawhip]
+    skiapiri [label = "Скиапири", fillcolor=lemonchiffon]
+    okulten_hibrid [label = "Окултен\n Хибрид", fillcolor=lightyellow1]
+    aikan_bezbozhnika [label = "Айкън\n Безбожника", fillcolor=palegoldenrod]
+    mag_zin [label = "Маг\n Зин", fillcolor=rosybrown1]
+    koralov_ostrov [label = "Коралов\n остров", fillcolor=wheat]
+    skraimir [label = "Скраймир", fillcolor=wheat]
+    end [label = "Край", shape=star, color=darkgoldenrod1, style=filled]
+
+    begin -> sergii
+    sergii -> balhazar, vil, kaliudzhan
+    vil -> kaliudzhan
+    balhazar -> kaliudzhan
+    balhazar -> elfska_gradina, ogledalen_koridor
+    kaliudzhan -> reindzhar, ezero_sarkofazi
+    reindzhar -> ezero_sarkofazi
+    ezero_sarkofazi -> lodkar, prikovani_chudovishta, shahmatna_daska, spirala
+    lodkar -> shamandura, prikovani_chudovishta
+    shamandura -> prikovani_chudovishta, ezero_imragarn
+    elfska_gradina -> ogledalen_koridor
+    ogledalen_koridor -> nebularon, varvari
+    nebularon -> ezero_imragarn, varvari_mech
+    ezero_imragarn -> varvari_mech
+    prikovani_chudovishta -> shahmatna_daska, spirala
+    shahmatna_daska -> spirala
+    varvari_mech -> spirala, shahmatna_daska
+    varvari -> vkameneni_prikluchenci, spirala
+    vkameneni_prikluchenci -> spirala
+    spirala -> leshoyadi
+    leshoyadi -> dva_mosta
+    dva_mosta -> veshtici, hram_ehidna, skiapiri
+    veshtici -> hram_ehidna, skiapiri
+    hram_ehidna -> aikan_bezbozhnika, skiapiri
+    skiapiri -> okulten_hibrid
+    okulten_hibrid -> aikan_bezbozhnika
+    aikan_bezbozhnika -> mag_zin, koralov_ostrov
+    mag_zin -> koralov_ostrov
+    koralov_ostrov -> skraimir, end
+    skraimir -> end
+}
