@@ -1,0 +1,42 @@
+digraph IzpitanietoSimple {
+    node [style=filled]
+    begin [label = "Начало", shape=star, color=darkgoldenrod1, style=filled]
+    kosmos [label = "Космос", fillcolor=seashell]
+    omagiosana_gora [label = "Омагьосаната\n гора", fillcolor=aliceblue]
+    chernata_kula [label = "Черната\n кула", fillcolor=mistyrose]
+    varvari [label = "Варвари", fillcolor=moccasin]
+    robot [label = "Робот", fillcolor=coral]
+    arkol [label = "Аркол", fillcolor=paleturquoise]
+    perst [label = "Перст", fillcolor=burlywood1]
+    karos [label = "Карос", fillcolor=floralwhite]
+    ogra [label = "Огра", fillcolor=cornsilk]
+    tearima [label = "Теарима", fillcolor=antiquewhite]
+    syanka [label = "Сянка", fillcolor=lemonchiffon]
+    vratata [label = "Вратата", fillcolor=azure]
+    kervan [label = "Керван", fillcolor=floralwhite]
+    blatna_kushta [label = "Блатна\n къща", fillcolor=darkolivegreen1]
+    kerion [label = "Керион", fillcolor=mintcream]
+    tarkin [label = "Таркин", fillcolor=darkslategray3]
+    prohoda_na_drakona [label = "Прохода\n на дракона", fillcolor=gainsboro]
+    ezero [label = "Езеро", fillcolor=darkslategray1]
+    end [label = "Край", shape=star, color=darkgoldenrod1, style=filled]
+
+    begin -> kosmos
+    kosmos -> omagiosana_gora, varvari, chernata_kula
+    varvari -> chernata_kula, robot
+    omagiosana_gora -> varvari
+    robot -> arkol, karos
+    karos -> ezero, tarkin
+    arkol -> perst, blatna_kushta, ogra
+    blatna_kushta -> kerion
+    ezero -> ogra, tearima, kervan, tarkin
+    ogra -> tarkin
+    tarkin -> prohoda_na_drakona
+    prohoda_na_drakona -> tearima, kervan
+    kerion -> tearima, kervan
+    perst -> ogra, blatna_kushta
+    tearima -> syanka
+    kervan -> vratata
+    syanka -> vratata
+    vratata -> end
+}
