@@ -54,6 +54,7 @@ digraph Uzurpator {
         color = blue
         bgcolor = mistyrose
         label = "Айгучи"
+        // 65 епизода
         5, 70, 72, 58, 34, 48, 82, 294, 300, 273, 250, 164
         182, 239, 233, 190, 239, 204, 217, 223, 56, 22
         38, 10, 63, 312, 157, 266, 113, 280, 328, 356, 345, 210
@@ -64,8 +65,9 @@ digraph Uzurpator {
 
     subgraph cluster_golem {
         color = blue
-        bgcolor = coral
+        bgcolor = paleturquoise
         label = "Голем"
+        // 41 епизода
         55, 64, 79, 88, 99, 108, 120, 139, 149, 158, 211, 230
         240, 270, 259, 165, 179, 191, 228, 348, 372, 385, 392, 413
         360, 357, 142, 29, 42, 151, 85, 74, 97, 23, 52, 352, 411
@@ -74,7 +76,7 @@ digraph Uzurpator {
 
     subgraph cluster_zasada_streli {
         color = blue
-        bgcolor = paleturquoise
+        bgcolor = lemonchiffon
         label = "Засада\n със стрели"
         337, 326, 281, 272, 314, 261, 248
     }
@@ -90,6 +92,7 @@ digraph Uzurpator {
         color = blue
         bgcolor = floralwhite
         label = "Демон"
+        // 46 епизода
         419, 104, 116, 128, 143, 152, 167, 175, 183, 192, 243, 234, 288, 255
         226, 402, 396, 418, 344, 374, 18, 201, 283, 218, 197, 209, 147
         132, 277, 122, 114, 295, 302, 156, 93, 178, 163, 86, 66, 276, 285
