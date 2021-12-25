@@ -1,4 +1,5 @@
 digraph KotarakaNarcisa {
+    fontsize = 50
     subgraph deaths {
         node [color=red, style=filled] 
         40, 91, 140, 150, 173, 187, 194, 202, 204, 216
@@ -22,7 +23,7 @@ digraph KotarakaNarcisa {
     subgraph cluster_kushtata_na_babata {
         color = blue
         bgcolor = seashell
-        label = "Къщата на бабата"
+        label = "Къщата\nна бабата"
         4, 9, 18, 13
     }
 
@@ -116,7 +117,7 @@ digraph KotarakaNarcisa {
     subgraph cluster_srednoshtna_princesa {
         color = blue
         bgcolor = mintcream
-        label = "Среднощна принцеса"
+        label = "Среднощна\nпринцеса"
         215, 235, 257, 225, 206, 247, 233, 206, 213, 243
         241, 211, 205, 228, 218, 201, 240, 214, 250, 260
         220, 234, 202, 242, 244, 254, 246, 221, 226, 222
