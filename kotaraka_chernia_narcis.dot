@@ -12,16 +12,131 @@ digraph KotarakaNarcisa {
     }
     subgraph awards {
         node [color=chartreuse, style=filled]
+        25, 36, 30, 109, 127, 152, 172, 177, 161, 254
+        107, 162, 200, 257, 235, 221, 226, 243, 234, 244
     }
     subgraph bads {
         node [style=radial, fillcolor="coral;0.2:white;0.8"]
     }
+
+    subgraph cluster_kushtata_na_babata {
+        color = blue
+        bgcolor = seashell
+        label = "Къщата на бабата"
+        4, 9, 18, 13
+    }
+
+    subgraph cluster_strazhi {
+        color = blue
+        bgcolor = aliceblue
+        label = "Стражи"
+        5, 27, 34, 20, 22, 29, 16, 11, 40
+    }
+
+    subgraph cluster_kilia {
+        color = blue
+        bgcolor = mistyrose
+        label = "Килия"
+        3, 32, 39, 24, 28, 14, 6, 36, 30, 25, 8, 2, 17
+        26, 21, 33
+    }
+
+    subgraph cluster_prisluzhnik {
+        color = blue
+        bgcolor = moccasin
+        label = "Прислужник"
+        12, 19, 31, 38, 23, 7, 15
+    }
+
+    subgraph cluster_leydi {
+        color = blue
+        bgcolor = paleturquoise
+        label = "Лейди"
+        10, 35, 41, 49, 37, 45, 53, 61, 68, 76, 48
+        43, 55, 72, 63, 79, 70
+    }
+
+    subgraph cluster_ovchar {
+        color = blue
+        bgcolor = burlywood1
+        label = "Овчар"
+        44, 66, 71, 60, 78, 83, 91, 62, 87, 65, 93, 81
+        56, 67, 47, 57, 69, 85, 64, 74
+    }
+
+    subgraph cluster_pchelichka {
+        color = blue
+        bgcolor = floralwhite
+        label = "Пчеличка"
+        50, 59, 89, 77, 97, 73, 52, 90, 98, 75, 82
+        80, 84, 92, 96, 104, 94, 112, 86, 100, 88, 95
+    }
+
+    subgraph cluster_svada {
+        color = blue
+        bgcolor = cornsilk
+        label = "Свада"
+        106, 99, 120, 110, 114, 122, 125, 108, 130, 101
+        123, 113
+    }
+
+    subgraph cluster_runa {
+        color = blue
+        bgcolor = antiquewhite
+        label = "Руна"
+        136, 116, 107, 133, 126, 146, 148, 137, 131, 141, 119
+    }
+
+    subgraph cluster_druid {
+        color = blue
+        bgcolor = lemonchiffon
+        label = "Друид"
+        118, 109, 127, 143, 147, 149, 111, 132, 138
+        145, 124, 139, 115, 136, 102, 117
+    }
+
+    subgraph cluster_izmykvane {
+        color = blue
+        bgcolor = azure
+        label = "Измъкване"
+        129, 105, 142, 152, 134, 144, 160, 170, 177
+        166, 169, 155, 164, 176, 187, 153, 161, 195
+        165, 156, 186, 173, 186, 157, 168, 178, 188
+        158, 193, 172, 185, 175, 198, 190, 163, 180
+    }
+
+    subgraph cluster_kinzhal {
+        color = blue
+        bgcolor = floralwhite
+        label = "Кинжал"
+        184, 181, 154, 182, 189, 196, 203, 210, 167
+        199, 209, 239, 229, 171, 159, 224, 194, 191, 197
+    }
+
+    subgraph cluster_srednoshtna_princesa {
+        color = blue
+        bgcolor = mintcream
+        label = "Среднощна принцеса"
+        215, 235, 257, 225, 206, 247, 233, 206, 213, 243
+        241, 211, 205, 228, 218, 201, 240, 214, 250, 260
+        220, 234, 202, 242, 244, 254, 246, 221, 226, 222
+        255, 231, 230, 245, 259, 252, 237, 236, 216, 248
+    }
+
+    subgraph cluster_beglec {
+        color = blue
+        bgcolor = darkolivegreen1
+        label = "Беглец"
+        200, 251, 258, 232, 223, 253, 256, 249, 238, 227
+        208, 212, 204, 183, 192, 207, 217
+    }
+
     1 [color=darkgoldenrod1, style=filled]
     1 -> 4, 9 
     2 -> 26
     3 -> 14, 24, 32
     4 -> 5
-    5 -> 10, 27, 34
+    5 -> 20, 27, 34
     6 -> 8
     7 -> 10
     8 -> 2, 17
@@ -132,7 +247,7 @@ digraph KotarakaNarcisa {
     113 -> 135
     114 -> 108, 122
     115 -> 102
-    116 -> 106, 126, 133
+    116 -> 107, 126, 133
     117 -> 129
     118 -> 109, 127, 143, 138, 147
     119 -> 128
