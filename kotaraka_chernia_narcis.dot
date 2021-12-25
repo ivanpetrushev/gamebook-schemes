@@ -15,7 +15,6 @@ digraph KotarakaNarcisa {
     }
     subgraph bads {
         node [style=radial, fillcolor="coral;0.2:white;0.8"]
-        36, 73,8, 369, 374, 402, 412, 239, 25, 248, 256
     }
     1 [color=darkgoldenrod1, style=filled]
     1 -> 4, 9 
@@ -110,7 +109,7 @@ digraph KotarakaNarcisa {
     90 -> 80
     91
     92 -> 96, 104
-    93 -> 47, 67, 67
+    93 -> 47, 67
     94 -> 100
     95 -> 106
     96 -> 100
