@@ -25,11 +25,79 @@ digraph VarvarskiaBog {
     }
     subgraph awards {
         node [color=chartreuse, style=filled]
-        109
+        109, 313
     }
     subgraph bads {
         node [style=radial, fillcolor="coral;0.2:white;0.8"]
-        48, 142, 261, 327, 468, 554, 579, 606, 620, 681, 761
+        48, 142, 261, 327, 468, 554, 579, 606, 620, 681, 761, 528, 333
+    }
+
+
+    subgraph cluster_hram_guor {
+        color = blue
+        bgcolor = seashell
+        label = "Храм на Гуор"
+        345, 697, 614, 408, 322, 733, 390, 282, 344, 125, 59, 776
+    }
+
+    subgraph cluster_uvod {
+        color = blue
+        bgcolor = aliceblue
+        label = "Увод"
+        7, 224, 495, 624, 512, 5, 609, 3, 509
+    }
+
+    subgraph cluster_prez_stepta {
+        color = blue
+        bgcolor = mistyrose
+        label = "През степта"
+        524, 219, 633, 192, 554, 486, 560, 218, 648, 225, 528, 612, 658, 562
+        564, 636, 227, 522, 736, 405, 580, 318
+    }
+
+    subgraph cluster_v_primka {
+        color = blue
+        bgcolor = moccasin
+        label = "В примка"
+        440, 673, 677, 325, 436, 167, 359, 654, 333, 654, 359, 333, 679, 640
+    }
+
+    subgraph cluster_blatata {
+        color = blue
+        bgcolor = paleturquoise
+        label = "Блатата"
+        56, 662, 754, 82, 11, 616, 363, 205, 635, 452, 514, 555, 459, 703
+        552, 770, 237, 172, 85, 272, 161, 41, 324, 102
+
+        subgraph cluster_sirena {
+            color = red
+            label = "Сирена"
+            64, 209, 676, 185, 150, 620, 604
+        }
+    }
+
+    subgraph cluster_iztochnia_pat {
+        color = blue
+        bgcolor = burlywood1
+        label = "Източния път"
+        470, 375, 574, 443, 663, 586, 371, 738, 584, 377, 691, 245, 33
+        454, 120, 765, 35, 381, 695, 111, 534, 418, 65, 422, 547, 70
+        723, 647, 18, 145, 22, 523, 265, 698, 89
+    }
+
+    subgraph cluster_turil {
+        color = blue
+        bgcolor = floralwhite
+        label = "Турил"
+        133, 262, 430, 47, 16, 358, 339, 329, 155, 123, 445, 313, 140, 491
+        242, 88, 400, 373, 611, 483, 626, 582, 513, 594, 489, 639, 507, 86
+        608, 278, 649, 230, 413
+
+        subgraph cluster_taverna {
+            color = red
+            label = "Таверна"
+            81, 456, 627, 389, 112, 146, 93, 69, 421, 175, 292, 473, 24
+        }
     }
 
     1 [color=darkgoldenrod1, style=filled]
@@ -371,6 +439,7 @@ digraph VarvarskiaBog {
     336 -> 465, 481
     337 -> 109, 68
     338 -> 523
+    // no input to 338
     339 -> 242, 329, 155
     340 -> 499
     341 -> 401
@@ -391,7 +460,7 @@ digraph VarvarskiaBog {
     356 -> 170
     357 -> 255, 171
     358 -> 491, 582
-    359 -> 672
+    359 -> 679
     360 -> 439
     361 -> 56
     362 -> 215, 477
@@ -539,7 +608,7 @@ digraph VarvarskiaBog {
     504 -> 735, 461
     505 -> 565, 537, 173, 6
     506 -> 530, 132, 104
-    507 -> 189, 86
+    507 -> 489, 86
     508 -> 432
     509 -> 330
     510 -> 126, 578
