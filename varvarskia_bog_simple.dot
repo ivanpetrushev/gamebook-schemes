@@ -1,0 +1,41 @@
+digraph VarvarskiaBogSimple {
+    node [style=filled]
+    hram_guor [label = "Храм\nна Гуор", fillcolor = seashell]
+    uvod [label = "Увод", fillcolor = aliceblue]
+    prez_stepta [label = "През\nстепта", fillcolor = mistyrose]
+    v_primka [label = "В примка", fillcolor = moccasin]
+    blatata [label = "Блатата", fillcolor = paleturquoise]
+    iztochnia_pat [label = "Източния\n път", fillcolor = burlywood1]
+    turil [label = "Турил", fillcolor = floralwhite]
+    korb [label = "Корб", fillcolor = cornsilk]
+    danaci [label = "Данъци", fillcolor = antiquewhite]
+    izgorenata_zemya [label = "Изгорената\n земя", fillcolor = lemonchiffon]
+    tamir [label = "Тамир", fillcolor = azure]
+    ezernia_grad [label = "Езерния\n град", fillcolor = floralwhite]
+    na_borda [label = "На борда", fillcolor = darkolivegreen1]
+    harp [label = "Харп", fillcolor = mintcream]
+    tilt [label = "Тилт", fillcolor = darkslategray3]
+    grada_na_izgasnalia_vulkan [label = "Града на\n изгасналия вулкан", fillcolor = gainsboro]
+    planinski_prohod [label = "Планински\n проход", fillcolor = darkslategray1]
+    salmodil [label = "Салмодил", fillcolor = lightcyan]
+    rechen_shlep [label = "Речен\n шлеп", fillcolor = papayawhip]
+
+    uvod -> iztochnia_pat, prez_stepta
+    prez_stepta -> v_primka
+    iztochnia_pat -> turil
+    v_primka -> blatata, tamir
+    turil -> na_borda
+    na_borda -> harp
+    harp -> tilt, rechen_shlep, izgorenata_zemya, planinski_prohod
+    tilt -> planinski_prohod, izgorenata_zemya, salmodil, harp
+    planinski_prohod -> hram_guor
+    izgorenata_zemya -> tilt, salmodil, harp
+    salmodil -> planinski_prohod, harp
+    grada_na_izgasnalia_vulkan -> planinski_prohod, tilt, salmodil, ezernia_grad
+    ezernia_grad -> grada_na_izgasnalia_vulkan, rechen_shlep
+    rechen_shlep -> salmodil
+    danaci -> ezernia_grad
+    korb -> danaci, ezernia_grad, tamir
+    blatata -> korb
+    tamir -> ezernia_grad, grada_na_izgasnalia_vulkan
+}
