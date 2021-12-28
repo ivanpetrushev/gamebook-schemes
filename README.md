@@ -23,3 +23,11 @@ digraph Shema {
 Схемата може да се пише в този онлайн редактор, където веднага се вижда резултата от нея: https://dreampuf.github.io/GraphvizOnline/
 
 За повече информация за DOT формата, атрибутите и др. вижте Graphviz: https://graphviz.org/
+
+За ръчно рендериране на схема в SVG формат (по-бързо и по-лесно е за отваряне в браузър):
+
+> dot -Tsvg shema.dot > shema.svg
+
+За ръчно рендериране на схема в PNG формат:
+
+> dot -Tpng:gd shema.dot > shema.png
