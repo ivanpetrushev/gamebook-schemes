@@ -1,4 +1,5 @@
 digraph VarvarskiaBog {
+    fontsize = 50
     subgraph deaths {
         node [color=red, style=filled] 
         8, 14, 38, 44, 46, 60, 68, 71, 85, 115, 116, 139, 149, 164, 213, 217, 220
@@ -29,7 +30,7 @@ digraph VarvarskiaBog {
         109, 313, 451, 95, 202, 717, 214, 25, 27, 126
     }
     subgraph bads {
-        node [style=radial, fillcolor="coral;0.2:white;0.8"]
+        node [style=radial, fillcolor="yellow;0.2:white;0.8"]
         48, 142, 261, 327, 468, 554, 579, 606, 620, 681, 761, 528, 333, 385
         130, 727, 300, 602
     }
@@ -38,7 +39,7 @@ digraph VarvarskiaBog {
     subgraph cluster_hram_guor {
         color = blue
         bgcolor = seashell
-        label = "Храм на Гуор"
+        label = "Храм\n на Гуор"
         345, 697, 614, 408, 322, 733, 390, 282, 344, 125, 59, 776
     }
 
@@ -52,7 +53,7 @@ digraph VarvarskiaBog {
     subgraph cluster_prez_stepta {
         color = blue
         bgcolor = mistyrose
-        label = "През степта"
+        label = "През\n степта"
         524, 219, 633, 192, 554, 486, 560, 218, 648, 225, 528, 612, 658, 562
         564, 636, 227, 522, 736, 405, 580, 318
     }
@@ -81,7 +82,7 @@ digraph VarvarskiaBog {
     subgraph cluster_iztochnia_pat {
         color = blue
         bgcolor = burlywood1
-        label = "Източния път"
+        label = "Източният\n път"
         470, 375, 574, 443, 663, 586, 371, 738, 584, 377, 691, 245, 33
         454, 120, 765, 35, 381, 695, 111, 534, 418, 65, 422, 547, 70
         723, 647, 18, 145, 22, 523, 265, 698, 89
@@ -112,7 +113,7 @@ digraph VarvarskiaBog {
 
         subgraph cluster_noshten_ricar {
             color = red
-            label = "Нощен Рицар"
+            label = "Нощен\n Рицар"
             78, 588, 603, 518, 20, 597
         }
 
@@ -137,7 +138,7 @@ digraph VarvarskiaBog {
     subgraph cluster_izgorenata_zemya {
         color = blue
         bgcolor = lemonchiffon
-        label = "Изгорената земя"
+        label = "Изгорената\n земя"
         382, 468, 561, 431, 95, 501
         
         subgraph cluster_aivar {
@@ -148,13 +149,13 @@ digraph VarvarskiaBog {
 
         subgraph cluster_pustinen_kalmar {
             color = red
-            label = "Пустинен калмар"
+            label = "Пустинен\n калмар"
             170, 100, 372, 664, 728, 46, 388, 183, 490, 268
         }
 
         subgraph cluster_nevidima_stena {
             color = red
-            label = "Невидима стена"
+            label = "Невидима\n стена"
             496, 370, 724, 200, 593, 34, 105, 250, 457, 355
             732, 119, 164
         }
@@ -182,7 +183,7 @@ digraph VarvarskiaBog {
 
         subgraph cluster_kozheni_maski {
             color = red
-            label = "Кожени маски"
+            label = "Кожени\n маски"
             596, 37, 113, 701, 488, 646, 394, 169, 307, 115, 165, 36
             710, 248, 429, 667, 337, 535, 632, 259, 68, 109, 352, 480
             592, 637, 238, 116, 717
@@ -192,13 +193,13 @@ digraph VarvarskiaBog {
     subgraph cluster_ezernia_grad {
         color = blue
         bgcolor = floralwhite
-        label = "Езерният град"
+        label = "Езерният\n град"
         685, 4, 708, 583, 206, 376, 589, 340, 416, 499, 168, 346, 694
         387, 391
 
         subgraph cluster_zabranenia_grad {
             color = red
-            label = "Забраненият град"
+            label = "Забраненият\n град"
             273, 222, 349, 427, 348, 392, 10, 607, 643, 424, 350, 387, 605
             657, 270, 434, 653, 357, 204, 255, 171, 8, 397, 378, 569, 194
             208, 354, 173, 187, 6, 659, 189, 651, 521, 484, 214, 599, 576
@@ -215,13 +216,13 @@ digraph VarvarskiaBog {
 
         subgraph cluster_rechni_pirati {
             color = red
-            label = "Речни пирати"
+            label = "Речни\n пирати"
             288, 467, 700, 721, 665, 541, 310, 757, 656, 557, 253, 675, 190
             716, 211, 502, 166, 645, 367, 435, 108, 485, 531, 668
         }
         subgraph cluster_gigantski_kalmar {
             color = red
-            label = "Гигантски калмар"
+            label = "Гигантски\n калмар"
             383, 479, 13, 320, 63, 38
         }        
     }
@@ -243,7 +244,7 @@ digraph VarvarskiaBog {
 
         subgraph cluster_pohapni_dobre {
             color = red
-            label = "Похапни добре"
+            label = "Похапни\n добре"
             396, 568, 741, 58, 99, 12, 412, 55
         }
 
@@ -255,7 +256,7 @@ digraph VarvarskiaBog {
 
         subgraph cluster_zhult_kvartal {
             color = red
-            label = "Жълт квартал"
+            label = "Жълт\n квартал"
             188, 25, 103, 572, 285, 23, 419, 83, 75, 318, 526
             246, 92, 139, 319, 294, 110, 353, 769, 720, 71, 709
             447, 96, 652, 114, 52, 249, 705, 753, 406, 101, 57
@@ -276,7 +277,7 @@ digraph VarvarskiaBog {
     subgraph cluster_grada_na_izgasnalia_vulkan {
         color = blue
         bgcolor = gainsboro
-        label = "Града на изгасналия вулкан"
+        label = "Града на\n изгасналия вулкан"
         256, 151, 335, 423, 384, 472, 425, 748, 545, 671
         177, 275, 642, 315, 158, 266, 198
     }
@@ -284,7 +285,7 @@ digraph VarvarskiaBog {
     subgraph cluster_planinski_prohod {
         color = blue
         bgcolor = darkslategray1
-        label = "Планински проход"
+        label = "Планински\n проход"
         508, 432, 327, 682, 184, 687, 239, 154, 311, 297, 625
         264, 186, 210, 257, 745, 156, 726, 368, 500, 464, 638
         174, 775, 621, 567, 619, 515, 774, 551, 286, 157, 704
@@ -304,7 +305,7 @@ digraph VarvarskiaBog {
     subgraph cluster_rechen_shlep {
         color = blue
         bgcolor = papayawhip
-        label = "Речен шлеп"
+        label = "Речен\n шлеп"
         699, 395, 755, 127, 241, 579, 31, 713, 283, 444
         79, 755, 295, 317, 54, 312, 759, 87, 504, 411
         291, 461, 735, 725, 438, 460
