@@ -1,15 +1,17 @@
 digraph CarstvoWyrd {
+    fontsize = 50
     subgraph deaths {
         node [color=red, style=filled] 
-        50, 53, 89, 137, 244, 266, 283, 302, 349, 368, 388, 389, 390
+        53, 89, 137, 244, 266, 283, 302, 349, 368, 388, 389, 390
         391, 393, 419, 476, 497, 516, 526, 529, 532, 538, 552, 555
+        188
     }
     subgraph battles {
         node [shape=doubleoctagon, color=orange, style=filled]
         13, 37, 61, 64, 69, 71, 76, 92, 95, 97, 100, 119, 122, 148, 168
         169, 172, 198, 202, 212, 215, 216, 233, 237, 242, 243, 255, 258
         276, 304, 309, 360, 374, 413, 416, 421, 425, 427, 439, 440, 477
-        481, 482, 485, 521, 522, 530, 538, 540
+        481, 482, 485, 521, 522, 530, 538, 540, 457, 450
     }
     subgraph chance {
         node [shape=box, color=aquamarine, style=filled]
@@ -19,13 +21,14 @@ digraph CarstvoWyrd {
         node [color=chartreuse, style=filled]
         34, 62, 73, 77, 85, 111, 130, 190, 194, 197, 203, 222, 224
         262, 263, 277, 289, 303, 321, 327, 355, 375, 396, 400, 403
-        406, 428, 442, 451, 453, 489, 550
+        406, 428, 442, 451, 489, 550, 291, 330, 472, 506, 324, 50
+        329, 322, 568
     }
     subgraph bads {
         node [style=radial, fillcolor="coral;0.2:white;0.8"]
         3, 4, 11, 19, 28, 36, 39, 98, 115, 154, 160, 193, 218, 246
         254, 268, 298, 316, 340, 347, 354, 367, 379, 383, 394, 401
-        431, 433, 435, 488, 498, 510, 511, 557
+        431, 433, 435, 488, 498, 510, 511, 557, 475
     }
     subgraph class_specific {
         node [shape=triangle]
@@ -51,7 +54,232 @@ digraph CarstvoWyrd {
         }
     }
 
+    subgraph cluster_krai_lagernia_ogan {
+        color = blue
+        bgcolor = seashell
+        label = "Край лагерния огън"
+        1, 355, 343, 259, 126, 502, 20, 441, 203, 554, 486, 175, 214
+        348, 170, 24, 120, 132, 106, 47, 468, 144, 172, 119, 73, 85
+        335, 159
+    }
 
+    subgraph cluster_stalker {
+        color = blue
+        bgcolor = aliceblue
+        label = "Сталкер"
+        363, 33, 386, 230, 437, 397, 70, 271, 131, 491, 180, 68
+        110, 86, 276, 484, 41, 492, 162, 225, 295, 128, 167, 436
+        319, 285, 382, 279, 43, 388, 179, 256, 27, 151, 248, 67
+        410, 158, 19, 258, 169, 521, 212, 198, 303, 339, 204, 315
+        274, 122, 129, 263, 308, 63
+    }
+
+    subgraph cluster_varadaksor {
+        color = blue
+        bgcolor = mistyrose
+        label = "Варадаксор"
+        143, 301, 125, 164, 163, 421, 193, 514, 9, 108, 311, 139, 171
+        479, 265, 69, 462, 127, 398, 200, 535, 331, 192, 569
+        494, 98, 136, 332, 423, 236, 312, 58, 294, 297, 154
+        511, 280, 475, 471, 291, 286, 444, 406
+    }
+
+    subgraph cluster_port_kuanongu {
+        color = blue
+        bgcolor = moccasin
+        label = "Порт Куанонгу"
+        116, 269, 395, 232, 17, 83, 364, 237, 54, 358, 234, 515
+        181, 149, 141, 513, 345, 552, 253, 418, 79, 306, 326, 187
+        72, 205, 480, 417, 250, 242, 29, 478, 166, 473, 293
+    }
+
+    subgraph cluster_ogustus {
+        color = blue
+        bgcolor = paleturquoise
+        label = "Огъстъс"
+        424, 16, 65, 504, 536, 378, 44, 402, 522, 208, 76, 26, 93
+        238, 470, 140, 252, 524, 12, 453, 455, 497, 327, 278, 262
+        224, 241, 257, 2, 133, 379, 389, 445, 452, 548, 458, 333
+        529, 373, 435, 273, 28, 383, 121, 28, 94, 347, 23, 498, 287
+    }
+
+    subgraph cluster_tarseshtoto_chudovishte {
+        color = blue
+        bgcolor = burlywood1
+        label = "Търсещото Чудовище"
+        247, 11, 261, 118, 490, 148, 18, 560, 36, 251, 349
+        499, 298, 191, 469, 336, 466, 217, 510, 156, 231, 482
+    }
+
+    subgraph cluster_magdalena {
+        color = blue
+        bgcolor = cornsilk
+        label = "Магдалена"
+        4, 507, 55, 439, 438, 372, 6, 328, 283, 446, 89
+    }
+
+    subgraph cluster_begalka {
+        color = blue
+        bgcolor = floralwhite
+        label = "Бегълка"
+        404, 465, 533, 48, 135, 544, 284, 59
+    }
+
+    subgraph cluster_snezhni_vampiri {
+        color = blue 
+        bgcolor = antiquewhite
+        label = "Снежни вампири"
+        201, 362, 309, 366, 558, 244, 57, 46, 376, 8, 189
+        206, 227, 37, 412, 228, 449, 323, 32, 38, 235
+    }
+
+    subgraph cluster_aislaken {
+        color = blue
+        bgcolor = lemonchiffon
+        label = "Айслакен"
+        365, 316, 549, 340, 401, 457, 78, 22, 525
+    }
+
+    subgraph cluster_prorochica {
+        color = blue
+        bgcolor = azure
+        label = "Пророчица"
+        517, 564, 5, 84, 222, 341, 330, 277, 483, 518
+    }
+
+    subgraph cluster_elfi {
+        color = blue
+        bgcolor = floralwhite
+        label = "Елфи"
+        520, 361, 384, 99, 134, 296, 434, 218, 239, 546, 370
+        147, 542, 56, 138, 321, 211, 425, 289
+    }
+
+    subgraph cluster_mrazoviti_hrutki {
+        color = blue
+        bgcolor = darkolivegreen1
+        label = "Мразовити хрътки"
+        501, 233, 338, 464, 447, 399, 61, 66, 403
+    }
+
+    subgraph cluster_porta_na_klaneto {
+        color = blue
+        bgcolor = mintcream
+        label = "Порта на Клането"
+        528, 157, 433, 377, 39, 213, 354, 431
+    }
+
+    subgraph cluster_bandata {
+        color = blue
+        bgcolor = darkslategray3
+        label = "Бандата"
+        431, 416, 92, 243, 451, 334, 541, 454, 400, 130
+    }
+
+    subgraph cluster_silfi {
+        color = blue
+        bgcolor = gainsboro
+        label = "Силфи"
+        226, 509, 337, 14, 415, 392, 210, 463, 488, 42, 173
+        123, 215, 481, 97, 82, 523, 100
+    }
+
+    subgraph cluster_potok_ot_kryv {
+        color = blue
+        bgcolor = darkslategray1
+        label = "Поток от кръв"
+        350, 74, 430, 186, 561, 409, 555, 369, 443, 185, 368
+        112, 551
+    }
+
+    subgraph cluster_portata_na_obyrkvaneto {
+        color = blue
+        bgcolor = lightcyan
+        label = "Порта на Объркването"
+        199, 229, 184, 413, 540, 223, 342
+    }
+
+    subgraph cluster_energien_most {
+        color = blue
+        bgcolor = papayawhip
+        label = "Енергиен мост"
+        219, 240, 467, 107, 182, 407, 526, 87, 476, 381, 391
+    }
+
+    subgraph cluster_mramorni_plochi {
+        color = blue
+        bgcolor = lemonchiffon
+        label = "Мраморни плочи"
+        408, 60, 489, 385, 512, 356, 450, 472, 183, 493
+    }
+
+    subgraph cluster_portata_na_straha {
+        color = blue
+        bgcolor = lightyellow1
+        label = "Порта на Страха"
+        313, 196, 88, 95, 272
+    }
+
+    subgraph cluster_banketna_zala {
+        color = blue
+        bgcolor = palegoldenrod
+        label = "Банкетна зала"
+        275, 317, 440, 506
+    }
+
+    subgraph cluster_myrtyv {
+        color = blue
+        bgcolor = rosybrown1
+        label = "Мъртъв"
+        566, 390, 563, 500, 177, 538, 45, 96, 567, 202, 448, 52, 13
+        442, 461, 195, 64, 387, 324, 77, 152, 414, 115, 360, 50
+        329, 197
+    }
+
+    subgraph cluster_pogrebenie {
+        color = blue
+        bgcolor = wheat
+        label = "Погребение"
+        270, 426, 371, 3, 109, 281, 102, 485, 553, 90, 456, 375
+        124, 516, 545, 176, 194, 562, 322, 550
+    }
+
+    subgraph cluster_foltin {
+        color = blue
+        bgcolor = bisque1
+        label = "Фолтин"
+        411, 314, 260, 51, 351, 150, 114, 325, 30, 568
+        221
+    }
+
+    subgraph cluster_kliros {
+        color = blue
+        bgcolor = darkseagreen1
+        label = "Клирос"
+        40, 305, 160, 557, 188, 367, 527, 71, 477, 111
+    }
+
+    subgraph cluster_umborus {
+        color = blue
+        bgcolor = floralwhite
+        label = "Умборус"
+        353, 105, 101, 495, 380, 532, 34
+    }
+
+    subgraph cluster_carska_arena {
+        color = blue
+        bgcolor = aliceblue
+        label = "Царска арена"
+        508, 137, 25, 178, 31, 405, 290, 487, 556, 292
+        21, 357, 459, 519, 359, 393, 216, 374, 427, 300
+    }
+
+    subgraph cluster_tronna_payazhina {
+        color = blue
+        bgcolor = khaki1
+        label = "Тронна паяжина"
+        15, 307, 53, 282, 530, 503, 266, 460, 304, 62, 255, 190
+    }
 
     1 [color=darkgoldenrod1, style=filled]
     1 -> 355, 343, 259
@@ -128,7 +356,7 @@ digraph CarstvoWyrd {
     72 -> 166, 417
     73 -> 85
     74 -> 430
-    75 -> 535, 537
+    75 -> 531, 537
     76 -> 26
     77 -> 547
     78 -> 117
@@ -201,7 +429,7 @@ digraph CarstvoWyrd {
     145 -> 508
     146 -> 267, 429
     147 -> 211
-    148 -> 251, 359
+    148 -> 251, 349
     149 -> 513, 345, 552
     150 -> 568
     151 -> 212
@@ -390,7 +618,7 @@ digraph CarstvoWyrd {
     334 -> 541, 454
     335 -> 159
     336 -> 217, 510
-    337 -> 210, 463, 409, 392
+    337 -> 210, 463, 509, 392
     338 -> 447
     339 -> 419, 303
     340 -> 457
@@ -596,7 +824,7 @@ digraph CarstvoWyrd {
     540 -> 219
     541 -> 454
     542 -> 211
-    543 -> 566, 279
+    543 -> 566, 270
     544 -> 59
     545 -> 562
     546 -> 56, 321, 138, 542
