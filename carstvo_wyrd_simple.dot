@@ -1,0 +1,66 @@
+digraph CarstvoWyrdSimple {
+    fontsize=50
+    node [style=filled]
+    begin [label = "Начало", shape=star, color=darkgoldenrod1, style=filled]
+    krai_lagernia_ogan [label = "Край лагерния огън", fillcolor=seashell]
+    stalker [label = "Сталкер", fillcolor=aliceblue]
+    varadaksor [label = "Варадаксор", fillcolor=mistyrose]
+    port_kuanongu [label = "Порт Куанонгу", fillcolor=moccasin]
+    ogustus [label = "Огъстъс", fillcolor=paleturquoise]
+    tarseshtoto_chudovishte [label = "Търсещото Чудовище", fillcolor=burlywood1]
+    magdalena [label = "Магдалена", fillcolor=cornsilk]
+    begalka [label = "Бегълка", fillcolor=floralwhite]
+    snezhni_vampiri [label = "Снежни вампири", fillcolor=antiquewhite]
+    aislaken [label = "Айслакен", fillcolor=lemonchiffon]
+    prorochica [label = "Пророчица", fillcolor=azure]
+    elfi [label = "Елфи", fillcolor=floralwhite]
+    mrazoviti_hrutki [label = "Мразовити хрътки", fillcolor=darkolivegreen1]
+    porta_na_klaneto [label = "Порта на Клането", fillcolor=mintcream]
+    bandata [label = "Бандата", fillcolor=darkslategray3]
+    silfi [label = "Силфи", fillcolor=gainsboro]
+    potok_ot_kryv [label = "Поток от кръв", fillcolor=darkslategray1]
+    portata_na_obyrkvaneto [label = "Порта на Объркването", fillcolor=lightcyan]
+    energien_most [label = "Енергиен мост", fillcolor=papayawhip]
+    mramorni_plochi [label = "Мраморни плочи", fillcolor=lemonchiffon]
+    portata_na_straha [label = "Порта на Страха", fillcolor=lightyellow1]
+    banketna_zala [label = "Банкетна зала", fillcolor=palegoldenrod]
+    myrtyv [label = "Мъртъв", fillcolor=rosybrown1]
+    pogrebenie [label = "Погребение", fillcolor=wheat]
+    foltin [label = "Фолтин", fillcolor=bisque1]
+    kliros [label = "Клирос", fillcolor=darkseagreen1]
+    umborus [label = "Умборус", fillcolor=floralwhite]
+    carska_arena [label = "Царска арена", fillcolor=aliceblue]
+    tronna_payazhina [label = "Тронна паяжина", fillcolor=khaki1]
+    end [label = "Край", shape=star, color=darkgoldenrod1, style=filled]
+
+    begin -> krai_lagernia_ogan
+    krai_lagernia_ogan -> stalker, varadaksor, port_kuanongu
+    stalker -> varadaksor, port_kuanongu
+    varadaksor -> port_kuanongu
+    port_kuanongu -> magdalena, tarseshtoto_chudovishte, ogustus
+    magdalena -> ogustus, snezhni_vampiri
+    tarseshtoto_chudovishte -> snezhni_vampiri
+    ogustus -> prorochica, elfi
+    snezhni_vampiri -> begalka
+    begalka -> aislaken
+    aislaken -> prorochica, elfi
+    prorochica -> elfi
+    elfi -> mrazoviti_hrutki
+    mrazoviti_hrutki -> porta_na_klaneto, portata_na_obyrkvaneto, portata_na_straha
+    porta_na_klaneto -> bandata
+    bandata -> silfi
+    portata_na_obyrkvaneto -> mramorni_plochi, energien_most
+    portata_na_straha -> banketna_zala
+    silfi -> potok_ot_kryv
+    potok_ot_kryv -> myrtyv, pogrebenie
+    energien_most -> myrtyv, pogrebenie
+    banketna_zala -> myrtyv, pogrebenie
+    mramorni_plochi -> myrtyv, pogrebenie
+    myrtyv -> foltin, kliros, umborus
+    pogrebenie -> foltin, kliros, umborus
+    foltin -> kliros
+    kliros -> umborus
+    umborus -> carska_arena
+    carska_arena -> tronna_payazhina
+    tronna_payazhina -> end
+}
