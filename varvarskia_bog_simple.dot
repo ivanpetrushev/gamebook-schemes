@@ -30,7 +30,7 @@ digraph VarvarskiaBogSimple {
     tilt -> planinski_prohod, izgorenata_zemya, salmodil, harp
     planinski_prohod -> hram_guor
     izgorenata_zemya -> tilt, salmodil, harp
-    salmodil -> planinski_prohod, harp
+    salmodil -> planinski_prohod, harp, tilt, izgorenata_zemya
     grada_na_izgasnalia_vulkan -> planinski_prohod, tilt, salmodil, ezernia_grad
     ezernia_grad -> grada_na_izgasnalia_vulkan, rechen_shlep
     rechen_shlep -> salmodil
