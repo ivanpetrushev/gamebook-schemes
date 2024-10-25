@@ -1,0 +1,521 @@
+digraph OZN {
+    subgraph minus_zhivot {
+      node [color=red]
+      9 15 16 20 25 30 42 45 48 49
+      59 64 68 74 75 76 83 86 92 93
+      94 106 114 124 129 153 156 162
+      166 171 177 188 194 238 243
+      248 252 254
+    }
+    subgraph plus_zhivot {
+      node [color=green]
+      21 23 27 46 61 63 71 107 127
+      147
+    }
+    subgraph use_plates {
+      node [color=lightblue style=filled]
+      69 146 175
+    }
+    subgraph is_plate_entry {
+      node [shape=diamond]
+      75 96 132 147 156 165
+    }
+    subgraph ends {
+      node [color=red, style=filled]
+      26 126 150 152 168 172 207 211
+      216 226 242 249 256 260
+    }
+    subgraph epilogue {
+      215
+    }
+
+    subgraph cluster_katastrofa {
+      label = "Katastrofa"
+      color = blue
+      bgcolor = seashell
+      1 2 3 5 8 10 13 15 16 19 23 25 26
+    }
+    subgraph cluster_milko_1 {
+      label = "Milko 1"
+      color = blue
+      bgcolor = gray89
+      4
+      21 27 31 33 35 36 37 41 43 47 51 57 60 61 
+      62 65 66 67 71 76 78
+      82 84 86 92 97 98 99 104 107
+    }
+    subgraph cluster_milko_2 {
+      label = "Milko 2"
+      color = blue
+      bgcolor = mistyrose
+      65 151 163 173 167 178 183 194 196
+      204 206 234
+    }
+    subgraph cluster_figura {
+      label = "Figura"
+      color = blue
+      bgcolor = moccasin
+      6 28 30 38 39 44 45 48 50 53 55
+    }
+    subgraph cluster_pat {
+      label = "Pat 1"
+      color = blue
+      bgcolor = darkseagreen1
+      7 9 12 14 18 17 20 22 24 29 32 40 42 46 52 54 56 58
+      64 68 70 72 74 77 80 81 83 85 88 93 94
+      105 106 113
+    }
+    subgraph cluster_path_2 {
+      label = "Pat 2"
+      color = blue
+      bgcolor = mistyrose
+      121 179 189
+    }
+    subgraph cluster_sister_kashta_2 {
+      label = "Vera Kashta"
+      color = blue
+      bgcolor = bisque
+      115
+      154 161 175 181 184 185 191 195 198 199 200 205 209 210
+    }
+    subgraph cluster_miro {
+      label = "Miro"
+      color = blue
+      bgcolor = mistyrose
+      103 108 112 114 116 118 119 122 123 124 125 128 129 130 131 133 134 135 140 
+      141 142 143 144 145 148 149 150 152 157 158 159 162
+      164 169 171 172 174
+    }
+    subgraph cluster_stonehendge {
+      label = "Kamenen krug"
+      color = blue
+      bgcolor = cornsilk
+      190 201
+      203 208 211 212 213 214 215 216 217 218 219 220 221 
+      222 223 224 225 226 227 228 229 230 
+      231 232 233 236 237 238 239 240 241 242 243 244 247 
+      245 246 248 249 251 252 253 254 255 256 257 259 260
+    }
+    subgraph cluster_magla {
+      label = "Magla / Sandak"
+      color = blue
+      bgcolor = mistyrose
+      166 176 188
+    }
+    subgraph cluster_gora {
+      label = "Gora"
+      color = blue
+      bgcolor = khaki1
+      34 49 59 69 73 79 89
+      136
+    }
+    subgraph cluster_vera_emo_kashta_1 {
+      label = "Vera / Emo Kashta"
+      color = blue
+      bgcolor = lightcyan
+      100 110 120 138 160 170 180 182 186 192
+      235
+    }
+
+    1 [color=darkgoldenrod1, style=filled]
+    1 -> {5 15 25}
+    2 -> {8 13}
+    2 -> 19 [label="+ Яке"]
+    3 -> 19
+    4 -> 90
+    4 [label="4\n+ Dqdo"]
+    5 -> {16 26}
+    6 -> 11
+    6 -> 202 [label="? Mirage"]
+    6 [label="6\n+ Plate 49" shape="octagon"]
+    7 -> 29
+    8 -> {3 13 23}
+    9 -> {11 20}
+    10 -> 11
+    11 -> 17 [label="? Kola | Pat"]
+    11 -> 44 [label="? Varba"]
+    11 -> 65 [label="? Vizita"]
+    11 -> 34
+    12 -> {40 46 52 22}
+    13 -> 10
+    14 -> 18
+    15 -> 2
+    15 [label="15\n+ Zapalka"]
+    16 -> 2
+    16 [label="16\n+ Raka"]
+    17 -> 7
+    17 -> 9 [label="? Raka"]
+    17 [label="17\n +Kola"]
+    18 -> {12 22}
+    19 -> 10
+    20 -> 29
+    21 -> {37 47 57}
+    22 -> 11
+    22 [label="22\n Plate 34" shape="octagon"]
+    23 -> 19
+    24 -> {70 80}
+    25 -> 2
+    26
+    27 -> 4
+    28 -> 11
+    28 -> 202 [label="? Mirage"]
+    29 -> 14
+    29 -> {18 180} [label="? Varba\n? Vizita\n? Gora"]
+    30 -> {39 48 53}
+    31 -> {27 47 57}
+    31 [label="31\n+ Kibrit"]
+    32 -> {68 77 81}
+    33 -> {86 98}
+    34 -> 49
+    34 -> 73 [label="? Any Plates"]
+    35 -> {21 31 41 51}
+    35 [label="35\n+ Skasan list"]
+    36 -> {67 104 84}
+    37 -> 4
+    37 [label="37\n+ Kibrit"]
+    38 -> {30 45 50 55}
+    39 -> 6
+    40 -> {46 52}
+    41 -> {27 37 57}
+    41 [label="41\n+ Rakavica\n+ Qke"]
+    42 -> 74
+    42 -> 64 [label="? Raka"]
+    43 -> 71
+    43 -> 61 [label="? Zapalka"]
+    44 -> {28 38}
+    44 [label="44\n +Varba"]
+    45 -> 6
+    46 -> {54 58 80}
+    47 -> 4
+    47 [label="47\n+ Qke"]
+    48 -> 6
+    49 -> {17 44 65}
+    49 [label="49\n+ Gora"]
+    50 -> 6
+    51 -> {27 37 47}
+    52 -> {32 42 56}
+    53 -> 6
+    54 -> 72
+    54 -> 24 [label="? Raka"]
+    55 -> 6
+    56 -> 22
+    57 -> 4
+    58 -> {70 72}
+    59 -> 100
+    60 -> 107
+    60 -> 97 [label="? Tih"]
+    61 -> {66 76}
+    61 [label="61\n+ Tih\n+ Rakavici\n+ Qke"]
+    62 -> {67 104 84}
+    63 -> 87
+    63 -> 198
+    64 -> {80 85}
+    65 -> {33 43}
+    65 [label="65\n+ Vizita"]
+    66 -> 90
+    66 [label="66\n+ Obgoren list"]
+    67 -> 35
+    67 -> 4 [label="? Tih"]
+    67 [label="67\n+ Obgoren list"]
+    68 -> 93
+    68 -> 83 [label="? Raka"]
+    69 -> 89
+    70 -> 88
+    70 [label="70\n+ Dvoika"]
+    71 -> {66 76}
+    71 [label="71\n+ Tih\n+ Qke"]
+    72 -> {80 85}
+    73 -> {59 136 79}
+    74 -> {94 106}
+    75 -> 87
+    75 -> 198
+    76 -> {82 92}
+    77 -> {93 81}
+    78 -> {67 104 84}
+    79 -> {59 69}
+    80 -> 88
+    80 [label="80\n+ Roklq"]
+    81 -> {105 113}
+    82 -> {86 98}
+    83 -> 64
+    84 -> 35
+    84 -> 4 [label="? Tih"]
+    84 [label="84\n+ Obgoren list"]
+    85 -> 88
+    86 -> {92 98}
+    87 -> 100
+    87 -> 130 [label="? Mirage"]
+    88 -> 11
+    88 [label="88\nPlate 21" shape="octagon"]
+    89 -> 100
+    90 -> {153 11}
+    90 -> 202 [label="? Mirage"]
+    91 -> 87
+    91 -> 198
+    92 -> {66 60}
+    92 [label="92\n+ Udar"]
+    93 -> {105 113}
+    94 -> 11
+    94 [label="94\n+ Plate 34" shape="octagon"]
+    95 -> 190
+    96 -> {91 101 111}
+    97 -> 66
+    97 [label="97\n+ Kibrit\n+ Skasan list"]
+    98 -> {36 62 78}
+    99 -> {27 37 47 57}
+    100 -> {110 120}
+    100 [label="100\n+ Mirage"]
+    101 -> 87
+    101 -> 198
+    102 -> 87
+    102 -> 198
+    103 -> 155
+    103 [label="103\n+ Krav"]
+    104 -> 99
+    104 -> 4 [label="? Tih"]
+    104 [label="104\n+ Obgoren list"]
+    105 -> 88
+    105 [label="105\n+ Gnqv"]
+    106 -> 88
+    107 -> 66
+    107 [label="107\n+ Kibrit\n+ Qke"]
+    108 -> 124
+    108 -> 114 [label="? Raka"]
+    109 -> 87
+    109 -> 198
+    110 -> 160
+    110 [label="110\n+ Zapas\n+ Plate 55" shape="octagon"]
+    111 -> 87
+    111 -> 198
+    112 -> {103 123}
+    113 -> {80 85}
+    114 -> {119 129 133}
+    115 -> 190
+    116 -> 128
+    117 -> 87
+    117 -> 198
+    117 [label="117\n+ Vestnik"]
+    118 -> 140
+    118 -> 131 [label="? Raka"]
+    119 -> 174
+    120 -> 170
+    120 [label="120\n+ Kluchove"]
+    121 -> 189
+    121 -> 179 [label="? Dvoika"]
+    122 -> {128 157 149}
+    123 -> 155
+    123 [label="123\n+ Plate 52" shape="octagon"]
+    124 -> {133 143}
+    125 -> {134 144}
+    126 [label="126\n+ Mrak"]
+    127 -> 87
+    127 -> 198
+    128 -> {108 118}
+    129 -> 155
+    130 -> {135 122 141}
+    131 -> 114
+    132 -> {193 109 261}
+    133 -> {148 142}
+    134 -> 155
+    134 [label="134\n+ Signal"]
+    135 -> {128 157 149}
+    136 -> 69
+    136 [label="136\n+ Ochila"]
+    137 -> 87
+    137 -> 198
+    137 [label="137\n+ Rakavici"]
+    138 -> 192
+    138 -> 182 [label="? Vestnik"]
+    139 -> {126 146}
+    140 -> {171 112}
+    141 -> {116 125}
+    142 -> 162
+    142 -> 152 [label="? Raka | Qke"]
+    143 -> {171 112}
+    144 -> 155
+    144 [label="144\n+Signal\n+ Plate 52" shape="octagon"]
+    145 -> 155
+    145 [label="145\n+ Plate 52" shape="octagon"]
+    146 -> 130
+    146 [label="146\n+ Siqnie"]
+    147 -> {117 127 137}
+    148 -> 155
+    148 [label="148\n+ Led"]
+    149 -> {159 169}
+    150
+    151 -> 65
+    151 -> 163 [label="? Udar"]
+    151 -> 173 [label="? Dqdo"]
+    151 -> 167 [label="? Tih && not(Udar) && not(Dqdo)"]
+    152 [label="152\n+ Mrak"]
+    153 -> {166 11}
+    153 -> 202 [label="? Mirage"]
+    154 -> 200
+    154 -> 190 [label="? Krag"]
+    154 [label="154\n+ Plate 44" shape="octagon"]
+    155 -> {250 210}
+    156 -> 87
+    156 -> 198
+    157 -> {116 144}
+    158 -> {145 150}
+    158 [label="158\n+ Stud"]
+    159 -> {134 144}
+    160 -> 180
+    161 -> 181
+    161 [label="161\nTavan figuri"]
+    162 -> {172 158}
+    163 -> 202
+    163 [label="163\n+ Kashta"]
+    164 -> {171 112}
+    165 -> 87
+    165 -> 198
+    165 [label="165\n+ Darvo\n+ Magla"]
+    166 -> 11
+    166 -> 176 [label="? Kluchove"]
+    166 -> 202 [label="? Mirage"]
+    166 [label="166\n+ Magla"]
+    167 -> 178
+    167 -> 202 [label="+ Kashta"]
+    168
+    169 -> {174 164}
+    170 -> 180
+    171 -> {142 148}
+    172 [label="172\n+ Mrak"]
+    173 -> 183
+    174 -> 155
+    175 -> 200
+    175 -> 190 [label="? Krag"]
+    176 -> 188 [label="? Zapalka | Kibrit"]
+    176 -> 202
+    176 [label="176\n+ Plate 32" shape="octagon"]
+    177 -> 197
+    177 -> 187 [label="? Ochila"]
+    178 -> {194 204}
+    179 -> 11
+    179 -> 202 [label="? Mirage"]
+    179 [label="179\n+ Pat\n+ Plate 25" shape="octagon"]
+    180 -> {138 186}
+    181 -> {184 191}
+    181 [label="181\n+ Pomosht"]
+    182 -> 235
+    182 [label="182\n+ Vreme"]
+    183 -> {196 206 234}
+    183 [label="183\n+ Kashta\n+ Namachkan list"]
+    184 -> 200
+    185 -> 200
+    185 -> 190 [label="? Krag"]
+    185 [label="185\nZagadka"]
+    185 -> 154 [style="dashed"]
+    186 -> 235
+    187 -> 202
+    187 [label="187\n- Krag"]
+    188 -> 202
+    189 -> 11
+    189 -> 202 [label="? Mirage"]
+    189 [label="189\n+ Pat\n+ Plate 25" shape="octagon"]
+    190 -> {208 218}
+    190 -> 228 [label="? Rakavici"]
+    190 [label="190\nZagadka"]
+    191 -> 200
+    191 [label="191\n+ Ideq"]
+    192 -> 235
+    193 -> 87
+    193 -> 198
+    194 -> 202
+    194 [label="194\n+ Kashta"]
+    195 -> 200
+    195 -> 205 [label="? Kluchove"]
+    196 -> 202
+    197 -> 202
+    197 [label="197\n+ Ochila\n- Darvo"]
+    198 -> 200
+    198 -> 190 [label="? Krag"]
+    198 [label="? Krag | (Lach && not(Siqnie))\n198"]
+    199 -> 200
+    200 -> {185 195 202}
+    200 -> 175 [label="? not Lach"]
+    200 -> 209 [label="? not Pomosht"]
+    201 -> {221 211}
+    202 -> 139
+    202 -> 166 [label="? Magla"]
+    202 -> 177 [label="? Darvo"]
+    202 -> 121 [label="? not Pat"]
+    202 -> 44 [label="? not Varba"]
+    202 -> 151 [label="? not Kashta"]
+    203 -> 245
+    204 -> 183
+    205 -> 200
+    206 -> 202
+    206 [label="206\n+ Ideq"]
+    207 [label="207\n+ Mrak"]
+    208 -> 237
+    208 -> 225 [label="? Zapas && Ochila"]
+    209 -> 181
+    209 -> 161 [label="? Ochila"]
+    210 -> {185 115}
+    210 -> 175 [label="? not Lach"]
+    210 [label="210\n+ Krag"]
+    211 [label="211\n+ Sestra\n+ Mrak"]
+    212 -> {217 227}
+    213 -> 245
+    214 -> 220
+    215 [label="215\n+ Sestra"]
+    216 [label="216\n+ Mrak"]
+    217 -> {223 236 233 246}
+    218 -> {238 208}
+    219 -> {236 243 246 253}
+    220 -> {260 247 257}
+    220 [label="220\n+ Foierverk"]
+    221 -> 226
+    221 -> 216 [label="? Stud"]
+    222 -> {219 229}
+    223 -> 245
+    224 -> 242
+    224 -> 232 [label="? Ochila (podch)"]
+    225 -> {201 248}
+    226
+    227 -> {236 246 243 253}
+    228 -> {212 222}
+    229 -> {253 203 243 213}
+    230 -> {240 251}
+    230 -> 241 [label="? (Kibrit | Zapalka) && List"]
+    231 -> {224 214 244 254}
+    232 -> {242 254}
+    233 -> 245
+    234 -> 202
+    235 -> 199
+    236 -> 255
+    237 -> {201 248}
+    238 -> {212 222}
+    239 -> 215
+    240 -> {252 201}
+    241 -> {224 214 244 254}
+    242 [label="242\n+ Mrak"]
+    243 -> 255
+    244 -> 242
+    244 -> 232 [label="? Ochila (podch)"]
+    245 -> 240
+    245 -> 230 [label="? Ideq"]
+    245 [label="245\n+ Logika"]
+    246 -> 255
+    247 -> 215
+    248 -> 256
+    248 -> 247 [label="? Vreme"]
+    249 [label="249\n+ Sestra\n+ Mrak"]
+    250 -> 190
+    250 -> 95 [label="? Krav"]
+    250 -> 258 [label="? Ochila (not podch)"]
+    251 -> 240
+    252 -> {260 247 239}
+    253 -> 255
+    254 -> {260 247 257}
+    255 -> {249 259 248}
+    256 [label="256\n+ Sestra"]
+    257 -> 215
+    258 -> 190
+    258 [label="258\n+ podch Ochila"]
+    259 -> 201
+    260 [label="260\n+Sestra\n+ Mrak"]
+    261 -> 87
+    261 -> 198
+}
