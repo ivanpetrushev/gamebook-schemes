@@ -1,4 +1,5 @@
 digraph OZN {
+    fontsize=60
     subgraph minus_zhivot {
       node [color=red]
       9 15 16 20 25 30 42 45 48 49
